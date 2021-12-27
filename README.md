@@ -9,3 +9,11 @@ npm run dev
 yarn
 yarn dev
 ```
+
+### Technologies
+
+##### - NextJS
+##### - Theme-UI
+##### - React Custom Scrollbars
+##### - React Scroll
+##### - React Icons
