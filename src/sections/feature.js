@@ -7,6 +7,7 @@ import Performance from 'assets/feature/performance.svg';
 import Partnership from 'assets/feature/partnership.svg';
 import Subscription from 'assets/feature/subscription.svg';
 import Support from 'assets/feature/support.svg';
+import FeatureCardColumn from 'components/feature-card-column';
 
 const data = [
   {
@@ -45,7 +46,27 @@ const data = [
 
 export default function Feature() {
   return (
-   <h1>Feature</h1>
+   <section sx={{ variant: 'section.feature' }}>
+     <Container sx={{ marginTop: '60px', marginBottom: '-70px' }}>
+       <SectionHeader 
+        slogan='Quarity Features'
+        title='Amazing useful features'
+       />
+
+      <Grid sx={styles.grid}>
+        {data.map((item) => {
+          <FeatureCardColumn 
+            key={item.id}
+            src={item.imgSrc}
+            alt={item.altText}
+            title={item.title}
+            text={item.text}
+          />
+        })}
+      </Grid>
+
+     </Container>
+   </section>
   );
 }
 
