@@ -2,7 +2,6 @@
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
-import FeatureCard from 'components/feature-card.js';
 import Performance from 'assets/feature/performance.svg';
 import Partnership from 'assets/feature/partnership.svg';
 import Subscription from 'assets/feature/subscription.svg';
@@ -43,6 +42,7 @@ const data = [
       'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
   },
 ];
+
 
 export default function Feature() {
   return (
